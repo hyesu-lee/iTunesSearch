@@ -16,6 +16,9 @@
 		5CB6DECB2872E83700A752A7 /* iTunesSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6DECA2872E83700A752A7 /* iTunesSearchTests.swift */; };
 		5CB6DED52872E83700A752A7 /* iTunesSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6DED42872E83700A752A7 /* iTunesSearchUITests.swift */; };
 		5CB6DED72872E83700A752A7 /* iTunesSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6DED62872E83700A752A7 /* iTunesSearchUITestsLaunchTests.swift */; };
+		BF36C213755E416CFD0A6FED /* Pods_iTunesSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092199DCD8CA23F452FD91E7 /* Pods_iTunesSearch.framework */; };
+		C6E9CCBD04425333EBD64EF2 /* Pods_iTunesSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0454F5FEDEE2B0EC6B082AB /* Pods_iTunesSearchTests.framework */; };
+		FD0F3C893E89BE23AF9A4890 /* Pods_iTunesSearch_iTunesSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFAF45AC51C84401BD1C608 /* Pods_iTunesSearch_iTunesSearchUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		092199DCD8CA23F452FD91E7 /* Pods_iTunesSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D31E7F52949B4394322B51F /* Pods-iTunesSearch-iTunesSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch-iTunesSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-iTunesSearch-iTunesSearchUITests/Pods-iTunesSearch-iTunesSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		48D81AB461B957BD71A50CED /* Pods-iTunesSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch.debug.xcconfig"; path = "Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		5CB6DEB02872E83600A752A7 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB6DEB32872E83600A752A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CB6DEB52872E83600A752A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		5CB6DED02872E83700A752A7 /* iTunesSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB6DED42872E83700A752A7 /* iTunesSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchUITests.swift; sourceTree = "<group>"; };
 		5CB6DED62872E83700A752A7 /* iTunesSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		73253AC2222DCBDD5EA82590 /* Pods-iTunesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchTests.release.xcconfig"; path = "Target Support Files/Pods-iTunesSearchTests/Pods-iTunesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0454F5FEDEE2B0EC6B082AB /* Pods_iTunesSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C87098D73B656AD9FF3EC79F /* Pods-iTunesSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch.release.xcconfig"; path = "Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch.release.xcconfig"; sourceTree = "<group>"; };
+		EFC8CE121A64151A70E26146 /* Pods-iTunesSearch-iTunesSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch-iTunesSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-iTunesSearch-iTunesSearchUITests/Pods-iTunesSearch-iTunesSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FDFAF45AC51C84401BD1C608 /* Pods_iTunesSearch_iTunesSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearch_iTunesSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF113BC766EC8EE1D7E354A0 /* Pods-iTunesSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-iTunesSearchTests/Pods-iTunesSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF36C213755E416CFD0A6FED /* Pods_iTunesSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E9CCBD04425333EBD64EF2 /* Pods_iTunesSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0F3C893E89BE23AF9A4890 /* Pods_iTunesSearch_iTunesSearchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				5CB6DEC92872E83700A752A7 /* iTunesSearchTests */,
 				5CB6DED32872E83700A752A7 /* iTunesSearchUITests */,
 				5CB6DEB12872E83600A752A7 /* Products */,
+				AE7241B37A45C5B9CD1CCC8E /* Pods */,
+				A12669FE308756919389DA25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,30 @@
 			path = iTunesSearchUITests;
 			sourceTree = "<group>";
 		};
+		A12669FE308756919389DA25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				092199DCD8CA23F452FD91E7 /* Pods_iTunesSearch.framework */,
+				FDFAF45AC51C84401BD1C608 /* Pods_iTunesSearch_iTunesSearchUITests.framework */,
+				A0454F5FEDEE2B0EC6B082AB /* Pods_iTunesSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE7241B37A45C5B9CD1CCC8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48D81AB461B957BD71A50CED /* Pods-iTunesSearch.debug.xcconfig */,
+				C87098D73B656AD9FF3EC79F /* Pods-iTunesSearch.release.xcconfig */,
+				0D31E7F52949B4394322B51F /* Pods-iTunesSearch-iTunesSearchUITests.debug.xcconfig */,
+				EFC8CE121A64151A70E26146 /* Pods-iTunesSearch-iTunesSearchUITests.release.xcconfig */,
+				FF113BC766EC8EE1D7E354A0 /* Pods-iTunesSearchTests.debug.xcconfig */,
+				73253AC2222DCBDD5EA82590 /* Pods-iTunesSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CB6DEDA2872E83700A752A7 /* Build configuration list for PBXNativeTarget "iTunesSearch" */;
 			buildPhases = (
+				37E3E61C0CC6047A340F091C /* [CP] Check Pods Manifest.lock */,
 				5CB6DEAC2872E83600A752A7 /* Sources */,
 				5CB6DEAD2872E83600A752A7 /* Frameworks */,
 				5CB6DEAE2872E83600A752A7 /* Resources */,
+				246B19F719F9BDF884014A62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CB6DEDD2872E83700A752A7 /* Build configuration list for PBXNativeTarget "iTunesSearchTests" */;
 			buildPhases = (
+				2EB058BD58E91F82E97FAC83 /* [CP] Check Pods Manifest.lock */,
 				5CB6DEC22872E83700A752A7 /* Sources */,
 				5CB6DEC32872E83700A752A7 /* Frameworks */,
 				5CB6DEC42872E83700A752A7 /* Resources */,
+				7FC5A5BFC350D3F068265DD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CB6DEE02872E83700A752A7 /* Build configuration list for PBXNativeTarget "iTunesSearchUITests" */;
 			buildPhases = (
+				707CF1AE8D63CF819C0FFB66 /* [CP] Check Pods Manifest.lock */,
 				5CB6DECC2872E83700A752A7 /* Sources */,
 				5CB6DECD2872E83700A752A7 /* Frameworks */,
 				5CB6DECE2872E83700A752A7 /* Resources */,
+				B93F1BA5FFD67263F58B945D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +299,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		246B19F719F9BDF884014A62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EB058BD58E91F82E97FAC83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37E3E61C0CC6047A340F091C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		707CF1AE8D63CF819C0FFB66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesSearch-iTunesSearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FC5A5BFC350D3F068265DD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchTests/Pods-iTunesSearchTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchTests/Pods-iTunesSearchTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTunesSearchTests/Pods-iTunesSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B93F1BA5FFD67263F58B945D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearch-iTunesSearchUITests/Pods-iTunesSearch-iTunesSearchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTunesSearch-iTunesSearchUITests/Pods-iTunesSearch-iTunesSearchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTunesSearch-iTunesSearchUITests/Pods-iTunesSearch-iTunesSearchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5CB6DEAC2872E83600A752A7 /* Sources */ = {
@@ -432,6 +599,7 @@
 		};
 		5CB6DEDB2872E83700A752A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D81AB461B957BD71A50CED /* Pods-iTunesSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +628,7 @@
 		};
 		5CB6DEDC2872E83700A752A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87098D73B656AD9FF3EC79F /* Pods-iTunesSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +657,7 @@
 		};
 		5CB6DEDE2872E83700A752A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF113BC766EC8EE1D7E354A0 /* Pods-iTunesSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +678,7 @@
 		};
 		5CB6DEDF2872E83700A752A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73253AC2222DCBDD5EA82590 /* Pods-iTunesSearchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +699,7 @@
 		};
 		5CB6DEE12872E83700A752A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D31E7F52949B4394322B51F /* Pods-iTunesSearch-iTunesSearchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +718,7 @@
 		};
 		5CB6DEE22872E83700A752A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC8CE121A64151A70E26146 /* Pods-iTunesSearch-iTunesSearchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

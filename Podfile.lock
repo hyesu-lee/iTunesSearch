@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (5.6.1)
+  - Nimble (10.0.0)
+  - Quick (5.0.1)
+  - ReactorKit (3.2.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SnapKit (5.6.0)
+  - Then (3.0.0)
+  - WeakMapTable (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Nimble
+  - Quick
+  - ReactorKit
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
+  - SnapKit (~> 5.6.0)
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Nimble
+    - Quick
+    - ReactorKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - Then
+    - WeakMapTable
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
+  ReactorKit: e8b11d6b9c415405f381669b095c154a05b59eca
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
+
+PODFILE CHECKSUM: bf8e94bf07b81eb1b322b761f47c13e063435be1
+
+COCOAPODS: 1.11.2

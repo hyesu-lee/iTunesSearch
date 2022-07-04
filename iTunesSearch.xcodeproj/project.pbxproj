@@ -18,6 +18,8 @@
 		5CB6DEE62872F44300A752A7 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6DEE52872F44300A752A7 /* Song.swift */; };
 		5CB6DEE82872F95600A752A7 /* SearchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6DEE72872F95600A752A7 /* SearchViewReactor.swift */; };
 		5CB6DEEC2872FB4400A752A7 /* SearchViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6DEEB2872FB4400A752A7 /* SearchViewControllerSpec.swift */; };
+		5CB6DEF22873129400A752A7 /* ITunesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6DEF12873129400A752A7 /* ITunesService.swift */; };
+		5CB6DEF52873146C00A752A7 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6DEF42873146C00A752A7 /* APIResult.swift */; };
 		BF36C213755E416CFD0A6FED /* Pods_iTunesSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092199DCD8CA23F452FD91E7 /* Pods_iTunesSearch.framework */; };
 		C6E9CCBD04425333EBD64EF2 /* Pods_iTunesSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0454F5FEDEE2B0EC6B082AB /* Pods_iTunesSearchTests.framework */; };
 		FD0F3C893E89BE23AF9A4890 /* Pods_iTunesSearch_iTunesSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFAF45AC51C84401BD1C608 /* Pods_iTunesSearch_iTunesSearchUITests.framework */; };
@@ -59,6 +61,8 @@
 		5CB6DEE52872F44300A752A7 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		5CB6DEE72872F95600A752A7 /* SearchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewReactor.swift; sourceTree = "<group>"; };
 		5CB6DEEB2872FB4400A752A7 /* SearchViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerSpec.swift; sourceTree = "<group>"; };
+		5CB6DEF12873129400A752A7 /* ITunesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesService.swift; sourceTree = "<group>"; };
+		5CB6DEF42873146C00A752A7 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		73253AC2222DCBDD5EA82590 /* Pods-iTunesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearchTests.release.xcconfig"; path = "Target Support Files/Pods-iTunesSearchTests/Pods-iTunesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0454F5FEDEE2B0EC6B082AB /* Pods_iTunesSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87098D73B656AD9FF3EC79F /* Pods-iTunesSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch.release.xcconfig"; path = "Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				5CB6DEED287305F200A752A7 /* SearchSong */,
 				5CB6DEEE2873062A00A752A7 /* Model */,
 				5CB6DEF02873064100A752A7 /* Resource */,
+				5CB6DEF32873129900A752A7 /* Service */,
 			);
 			path = iTunesSearch;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				5CB6DEE52872F44300A752A7 /* Song.swift */,
+				5CB6DEF42873146C00A752A7 /* APIResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +186,14 @@
 				5CB6DEC12872E83700A752A7 /* Info.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		5CB6DEF32873129900A752A7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5CB6DEF12873129400A752A7 /* ITunesService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		A12669FE308756919389DA25 /* Frameworks */ = {
@@ -464,6 +478,8 @@
 				5CB6DEB82872E83600A752A7 /* SearchViewController.swift in Sources */,
 				5CB6DEB42872E83600A752A7 /* AppDelegate.swift in Sources */,
 				5CB6DEE62872F44300A752A7 /* Song.swift in Sources */,
+				5CB6DEF52873146C00A752A7 /* APIResult.swift in Sources */,
+				5CB6DEF22873129400A752A7 /* ITunesService.swift in Sources */,
 				5CB6DEB62872E83600A752A7 /* SceneDelegate.swift in Sources */,
 				5CB6DEE42872F01600A752A7 /* SongTableViewCell.swift in Sources */,
 				5CB6DEE82872F95600A752A7 /* SearchViewReactor.swift in Sources */,

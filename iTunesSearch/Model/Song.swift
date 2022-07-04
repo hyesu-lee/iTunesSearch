@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct Song {
+struct Song: Decodable {
     let name: String
     let artist: String
+
+    enum CodingKeys: String, CodingKey {
+        case name = "trackName"
+        case artist = "artistName"
+    }
 }
 
 extension Song {

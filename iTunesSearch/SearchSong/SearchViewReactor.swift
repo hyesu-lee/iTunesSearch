@@ -26,12 +26,15 @@ final class SearchViewReactor: Reactor {
 
     let initialState: State = State()
 
+    var itunesService = ITunesService()
+
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-        case .updateQuery:
+        case let .updateQuery(query):
             return .concat([
                 .just(.setIsLoading(true)),
-                .just(.setSongs(Song.samples)),
+                self.itunesService.search(query: query)
+                    .map { .setSongs($0) },
                 .just(.setIsLoading(false))
             ])
         }

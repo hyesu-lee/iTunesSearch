@@ -60,16 +60,19 @@ final class SongTableViewCell: UITableViewCell {
         self.downloadButton.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.trailing.equalToSuperview().offset(-Padding.horizontal)
+            $0.width.lessThanOrEqualTo(30)
         }
 
         self.nameLabel.snp.makeConstraints {
             $0.top.equalToSuperview().offset(Padding.vertical)
             $0.leading.equalToSuperview().offset(Padding.horizontal)
+            $0.trailing.equalTo(self.downloadButton.snp.leading).offset(-Padding.horizontal)
         }
 
         self.artistLabel.snp.makeConstraints {
             $0.top.equalTo(self.nameLabel.snp.bottom).offset(Padding.vertical)
             $0.leading.equalTo(self.nameLabel.snp.leading)
+            $0.trailing.equalTo(self.nameLabel.snp.trailing)
         }
     }
 }

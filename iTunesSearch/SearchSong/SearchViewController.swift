@@ -70,7 +70,10 @@ final class SearchViewController: UIViewController, View {
 
     private func setupConstraints() {
         self.tableView.snp.makeConstraints {
-            $0.edges.equalTo(self.view.safeAreaLayoutGuide.snp.edges)
+            $0.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            $0.leading.equalTo(self.view.safeAreaLayoutGuide.snp.leading)
+            $0.trailing.equalTo(self.view.safeAreaLayoutGuide.snp.trailing)
+            $0.bottom.equalTo(self.view.snp.bottom)
         }
 
         self.activityIndicatorView.snp.makeConstraints {

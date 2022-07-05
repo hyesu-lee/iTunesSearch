@@ -32,11 +32,6 @@ final class SongTableViewCell: UITableViewCell {
         $0.font = .preferredFont(forTextStyle: .body)
     }
 
-    let downloadButton = UIButton().then {
-        let image = UIImage(systemName: "icloud.and.arrow.down")
-        $0.setImage(image, for: .normal)
-    }
-
 
     // MARK: Initializer
 
@@ -53,20 +48,15 @@ final class SongTableViewCell: UITableViewCell {
     // MARK: Private Methods
 
     private func configureUI() {
+        self.selectionStyle = .none
+        
         self.addSubview(self.nameLabel)
         self.addSubview(self.artistLabel)
-        self.addSubview(self.downloadButton)
-
-        self.downloadButton.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
-            $0.trailing.equalToSuperview().offset(-Padding.horizontal)
-            $0.width.lessThanOrEqualTo(30)
-        }
 
         self.nameLabel.snp.makeConstraints {
             $0.top.equalToSuperview().offset(Padding.vertical)
             $0.leading.equalToSuperview().offset(Padding.horizontal)
-            $0.trailing.equalTo(self.downloadButton.snp.leading).offset(-Padding.horizontal)
+            $0.trailing.equalToSuperview().offset(-Padding.horizontal)
         }
 
         self.artistLabel.snp.makeConstraints {

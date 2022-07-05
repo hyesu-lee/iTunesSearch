@@ -5,6 +5,7 @@
 //  Created by 이혜수 on 2022/07/04.
 //
 
+import AVKit
 import UIKit
 
 import ReactorKit
@@ -98,6 +99,11 @@ final class SearchViewController: UIViewController, View {
             .bind(to: reactor.action)
             .disposed(by: self.disposeBag)
 
+        self.tableView.rx.itemSelected
+            .map { Reactor.Action.songSelected($0) }
+            .bind(to: reactor.action)
+            .disposed(by: self.disposeBag)
+
         reactor.state
             .map { $0.songs }
             .bind(to: self.tableView.rx.items(cellIdentifier: SongTableViewCell.identifier, cellType: SongTableViewCell.self)) { row, song, cell in
@@ -110,6 +116,17 @@ final class SearchViewController: UIViewController, View {
             .map { $0.isLoading }
             .bind(to: self.activityIndicatorView.rx.isAnimating)
             .disposed(by: self.disposeBag)
+
+        reactor.state
+            .compactMap { $0.audioURL }
+            .subscribe(onNext: { [weak self] url in
+                let player = AVPlayer(url: url)
+                let avPlayerViewController = AVPlayerViewController().then {
+                    $0.player = player
+                }
+                self?.present(avPlayerViewController, animated: true)
+                player.play()
+            })
+            .disposed(by: self.disposeBag)
     }
 }
-

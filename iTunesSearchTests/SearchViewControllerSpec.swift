@@ -57,28 +57,28 @@ class SearchViewControllerSpec: QuickSpec {
 
         // MARK: State
 
-        describe("songs state") {
+        describe("tracks state") {
             context("when updated") {
-                var songs: [Song]!
+                var tracks: [Track]!
 
                 beforeEach {
-                    songs = Song.samples
-                    reactor.stub.state.value.songs = songs
+                    tracks = Track.samples
+                    reactor.stub.state.value.tracks = tracks
                 }
 
                 it("update tableview's dataSource") {
                     let tableView = viewController.tableView
 
-                    songs.enumerated().forEach { index, song in
+                    tracks.enumerated().forEach { index, track in
                         let indexPath = IndexPath(row: index, section: 0)
 
-                        guard let cell = tableView.dataSource?.tableView(tableView, cellForRowAt: indexPath) as? SongTableViewCell else {
+                        guard let cell = tableView.dataSource?.tableView(tableView, cellForRowAt: indexPath) as? TrackTableViewCell else {
                             fail()
                             return
                         }
 
-                        expect(cell.nameLabel.text).to(equal(song.name))
-                        expect(cell.artistLabel.text).to(equal(song.artist))
+                        expect(cell.nameLabel.text).to(equal(track.name))
+                        expect(cell.artistLabel.text).to(equal(track.artist))
                     }
                 }
             }

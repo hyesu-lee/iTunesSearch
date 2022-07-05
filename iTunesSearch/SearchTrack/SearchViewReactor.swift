@@ -12,17 +12,17 @@ import ReactorKit
 final class SearchViewReactor: Reactor {
     enum Action: Equatable {
         case updateQuery(String?)
-        case songSelected(IndexPath)
+        case trackSelected(IndexPath)
     }
 
     enum Mutation {
-        case setSongs([Song])
+        case setTracks([Track])
         case setIsLoading(Bool)
         case setAudioURL(URL?)
     }
 
     struct State {
-        var songs: [Song] = []
+        var tracks: [Track] = []
         var isLoading: Bool = false
         var audioURL: URL?
     }
@@ -37,12 +37,12 @@ final class SearchViewReactor: Reactor {
             return .concat([
                 .just(.setIsLoading(true)),
                 self.itunesService.search(query: query)
-                    .map { .setSongs($0) },
+                    .map { .setTracks($0) },
                 .just(.setIsLoading(false))
             ])
 
-        case let .songSelected(indexPath):
-            let url = self.currentState.songs[indexPath.row].previewURL
+        case let .trackSelected(indexPath):
+            let url = self.currentState.tracks[indexPath.row].previewURL
             return .concat([
                 .just(.setIsLoading(true)),
                 self.itunesService.download(url: url)
@@ -57,8 +57,8 @@ final class SearchViewReactor: Reactor {
         var newState = state
 
         switch mutation {
-        case let .setSongs(songs):
-            newState.songs = songs
+        case let .setTracks(tracks):
+            newState.tracks = tracks
 
         case let .setIsLoading(isLoading):
             newState.isLoading = isLoading

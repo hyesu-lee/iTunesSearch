@@ -16,7 +16,7 @@ class ITunesService {
                     switch response.result {
                     case let .success(data):
                         let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-                        let audioURL = documentURL.appendingPathComponent("song.mp4")
+                        let audioURL = documentURL.appendingPathComponent("track.mp4")
 
                         do {
                             try data.write(to: audioURL)
@@ -38,7 +38,7 @@ class ITunesService {
         }
     }
 
-    func search(query: String?) -> Observable<[Song]> {
+    func search(query: String?) -> Observable<[Track]> {
         guard let query = query else { return .just([]) }
 
         let url = "https://itunes.apple.com/search/media=music&entity=song"
@@ -46,7 +46,7 @@ class ITunesService {
 
         return Observable.create { observer in
             let request = Session.default.request(url, method: .get, parameters: parameters)
-                .responseDecodable(of: APIResult.self) { response in
+                .responseDecodable(of: TrackSearchResult.self) { response in
                     switch response.result {
                     case let .success(data):
                         observer.onNext(data.results)

@@ -21,7 +21,7 @@ final class SearchViewController: UIViewController, View {
     }
 
     let tableView = UITableView().then {
-        $0.register(SongTableViewCell.self, forCellReuseIdentifier: SongTableViewCell.identifier)
+        $0.register(TrackTableViewCell.self, forCellReuseIdentifier: TrackTableViewCell.identifier)
         $0.rowHeight = 70
     }
 
@@ -100,15 +100,15 @@ final class SearchViewController: UIViewController, View {
             .disposed(by: self.disposeBag)
 
         self.tableView.rx.itemSelected
-            .map { Reactor.Action.songSelected($0) }
+            .map { Reactor.Action.trackSelected($0) }
             .bind(to: reactor.action)
             .disposed(by: self.disposeBag)
 
         reactor.state
-            .map { $0.songs }
-            .bind(to: self.tableView.rx.items(cellIdentifier: SongTableViewCell.identifier, cellType: SongTableViewCell.self)) { row, song, cell in
-                cell.nameLabel.text = song.name
-                cell.artistLabel.text = song.artist
+            .map { $0.tracks }
+            .bind(to: self.tableView.rx.items(cellIdentifier: TrackTableViewCell.identifier, cellType: TrackTableViewCell.self)) { row, track, cell in
+                cell.nameLabel.text = track.name
+                cell.artistLabel.text = track.artist
             }
             .disposed(by: self.disposeBag)
 

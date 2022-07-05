@@ -1,5 +1,5 @@
 //
-//  Song.swift
+//  Track.swift
 //  iTunesSearch
 //
 //  Created by 이혜수 on 2022/07/04.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Song: Decodable {
+struct Track: Decodable {
     let name: String
     let artist: String
     let previewURL: String
@@ -19,9 +19,9 @@ struct Song: Decodable {
     }
 }
 
-extension Song {
+extension Track {
     static let samples = [
-        Song(name: "Can't Stop", artist: "Red Hot Chili Peppers", previewURL: ""),
-        Song(name: "Great Balls of Fire", artist: "Miles Teller", previewURL: "")
+        Track(name: "Can't Stop", artist: "Red Hot Chili Peppers", previewURL: ""),
+        Track(name: "Great Balls of Fire", artist: "Miles Teller", previewURL: "")
     ]
 }

@@ -1,5 +1,5 @@
 //
-//  SongTableViewCell.swift
+//  TrackTableViewCell.swift
 //  iTunesSearch
 //
 //  Created by 이혜수 on 2022/07/04.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class SongTableViewCell: UITableViewCell {
+final class TrackTableViewCell: UITableViewCell {
 
     // MARK: Cell Identifier
 
-    static let identifier = "SongTableViewCell"
+    static let identifier = "TrackTableViewCell"
 
 
     // MARK: Namespace
